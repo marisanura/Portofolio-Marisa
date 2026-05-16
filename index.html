@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Marisa</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=700;900&family=DM+Sans:wght=300;400;500;600&display=swap" rel="stylesheet" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top px-lg-5 px-3" id="navbarUtama">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#home">Marisa<span>.</span></a>
+
+    <button class="navbar-toggler border-0 shadow-none" type="button"
+            data-bs-toggle="collapse" data-bs-target="#menuNavigasi"
+            aria-controls="menuNavigasi" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuNavigasi">
+      <ul class="navbar-nav mx-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="home">
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <div class="hero-blob blob-3"></div>
+
+  <div class="container position-relative" style="z-index:2;">
+    <div class="row align-items-center min-vh-100" style="margin-top:-68px; padding-top:68px;">
+
+      <div class="col-lg-7">
+        <h1 class="hero-title mb-4">
+          Marisa Nur<br><em>Asifa</em>
+        </h1>
+        <p class="hero-sub mb-5">
+          I craft delightful digital experiences that are beautiful,
+          functional, and just a little bit magical ✨
+        </p>
+
+        <div class="hero-btns d-flex flex-wrap gap-3 mb-5">
+          <a href="#projects" class="btn-primary-custom">See My Work →</a>
+          <a href="#contact"  class="btn-outline-custom">Let's Talk</a>
+        </div>
+
+        <div class="hero-stats d-flex gap-4 gap-sm-5">
+          <div class="stat-item text-center">
+            <div class="stat-num" data-count="5">0</div>
+            <div class="stat-label">Projects Done</div>
+          </div>
+          <div class="stat-item text-center">
+            <div class="stat-num" data-count="9">0</div>
+            <div class="stat-label">Month Exp.</div>
+          </div>
+          <div class="stat-item text-center">
+            <div class="stat-num" data-count="28">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+        <div class="avatar-wrap position-relative">
+          <div class="avatar-ring">
+            <div class="avatar-inner"><img src="ava.png"></div>
+          </div>
+          <div class="floating-chip chip-1">
+            <span class="chip-dot" style="background:var(--c-accent3)"></span>HTML
+          </div>
+          <div class="floating-chip chip-2">
+            <span class="chip-dot" style="background:var(--c-accent4)"></span>CSS
+          </div>
+          <div class="floating-chip chip-3">
+            <span class="chip-dot" style="background:var(--c-accent2)"></span>Figma
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section-surface">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-5 reveal">
+        <div class="about-card mb-4">
+          <div class="section-tag">Nice to meet you!</div>
+          <div class="mt-3">
+            <span class="skill-chip">Figma</span>
+            <span class="skill-chip">Bootstrap</span>
+            <span class="skill-chip">CSS/SASS</span>
+            <span class="skill-chip">Next.js</span>
+            <span class="skill-chip">Tailwind</span>
+          </div>
+        </div>
+        
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="fact-card">
+              <div class="fact-num">5+</div>
+              <div class="fact-label">Projects</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="fact-card green">
+              <div class="fact-num">98%</div>
+              <div class="fact-label">Satisfaction</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="fact-card blue">
+              <div class="fact-num">10mth</div>
+              <div class="fact-label">Experience</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="fact-card orange">
+              <div class="fact-num">12+</div>
+              <div class="fact-label">Awards</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 reveal">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title mb-4" style="font-size:clamp(32px,5vw,58px)">
+          I Turn Ideas Into <em style="color:var(--c-accent1);font-style:normal">Reality</em>
+        </h2>
+        <p class="about-para mb-3">
+          Hi! My name is Marisa Nur Asifa. I am from Semarang, and I was born on October 24, 2010. I like listening to music and watching movies in my free time. These hobbies help me relax and give me new ideas and <strong>inspiration</strong>.
+        </p>
+        <p class="about-para mb-3">
+           I also enjoy exploring creativity and trying new experiences. I am interested in growing my knowledge and building a better future.
+        </p>
+        <a href="experience.pdf" class="btn-primary-custom">My Experience →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section-bg">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="section-tag">What I Can Do</div>
+      <h2 class="section-title text-center" style="font-size:clamp(32px,5vw,58px)">
+        My <em style="color:var(--c-accent1);font-style:normal">Skill</em>
+      </h2>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-7 col-md-9 fade-up">
+
+        <div class="skill-item">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+          </div>
+          <div class="progress w-100">
+            <div class="progress-bar" style="width:90%"></div>
+          </div>
+          <span class="skill-percent">90%</span>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+          </div>
+          <div class="progress w-100">
+            <div class="progress-bar" style="width:78%"></div>
+          </div>
+          <span class="skill-percent">78%</span>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          </div>
+          <div class="progress w-100">
+            <div class="progress-bar" style="width:80%"></div>
+          </div>
+          <span class="skill-percent">80%</span>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+          </div>
+          <div class="progress w-100">
+            <div class="progress-bar" style="width:60%"></div>
+          </div>
+          <span class="skill-percent">60%</span>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+          </div>
+          <div class="progress w-100">
+            <div class="progress-bar" style="width:70%"></div>
+          </div>
+          <span class="skill-percent">70%</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section-surface">
+  <div class="container fade-up">
+    <div class="text-center mb-2">
+      <div class="section-tag">My Latest Work</div>
+      <h2 class="section-title text-center" style="font-size:clamp(32px,5vw,58px)">
+        Projects That <em style="color:var(--c-accent1);font-style:normal">Spark Joy</em>
+      </h2>
+    </div>
+    <p class="text-center mb-4">
+      A selection of projects I've poured my heart ( and a lot of coffee ) into recently
+    </p>
+
+    <div class="d-flex justify-content-end gap-2 mb-3">
+      <button class="scroll-btn" id="tombolGeserKiri" title="Scroll kiri">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <button class="scroll-btn" id="tombolGeserKanan" title="Scroll kanan">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+
+    <div class="projects-scroll-wrap" id="areaTrackProject">
+      <div class="projects-track">
+
+          <div class="project-card shadow-sm">
+            <a href="https://marisanura.github.io/Tugas3-Environment/" style="text-decoration: none; color: inherit;">
+            <div class="project-thumb"><img src="environment.jpg"></div>
+            <div class="project-body">
+              <div class="project-title section-title">Environment</div>
+              <p class="project-desc">Website edukasi bertema lingkungan yang berisi informasi mengenai pentingnya menjaga alam dan meningkatkan kesadaran terhadap lingkungan hidup.</p>
+            </div>
+            </a>
+          </div>
+
+        <div class="project-card shadow-sm">
+          <a href="https://marisanura.github.io/tugas2/" style="text-decoration: none; color: inherit;">
+          <div class="project-thumb"><img src="smkdigital.jpg"></div>
+          <div class="project-body">
+            <div class="project-title section-title">SMK Digital</div>
+            <p class="project-desc">Website yang berisi informasi dan layanan digital sekolah untuk mendukung kegiatan belajar mengajar sehingga membantu menciptakan lingkungan belajar yang lebih efektif dan praktis.</p>
+          </div></a>
+        </div>
+
+        <div class="project-card shadow-sm">
+          <a href="https://dezanosaurus.vercel.app/" style="text-decoration: none; color: inherit;">
+          <div class="project-thumb"><img src="bekas.jpg"></div>
+          <div class="project-body">
+            <div class="project-title section-title">Bekas Jadi Berkelas</div>
+            <p class="project-desc">Website yang menampilkan berbagai kiat mengelola sampah plastik serta berbagai macam contoh produk hasil daur ulang</p>
+          </div></a>
+        </div>
+
+        <div class="project-card shadow-sm">
+          <a href="https://marisanura.github.io/tugas5_furniture-homedecor/" style="text-decoration: none; color: inherit;">
+          <div class="project-thumb"><img src="furniture.jpg"></div>
+          <div class="project-body">
+            <div class="project-title section-title">Furniture & Home Decor</div>
+            <p class="project-desc">Website furniture dan home decor dengan desain modern yang menampilkan berbagai produk interior rumah secara menarik, elegan, dan responsif.</p>
+          </div></a>
+        </div>
+
+        <div class="project-card shadow-sm">
+          <a href="https://marisanura.github.io/Tugas4-Coffee-Landingpage/" style="text-decoration: none; color: inherit;">
+          <div class="project-thumb"><img src="coffee.jpg"></div>
+          <div class="project-body">
+            <div class="project-title section-title">Coffee Shop</div>
+            <p class="project-desc">Landing page coffee shop dengan desain modern dan responsif yang menampilkan menu kopi serta suasana kafe secara menarik dan elegan.</p>
+          </div></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section-bg">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title" style="font-size:clamp(32px,5vw,58px)">
+        Let's Build Something <em style="color:var(--c-accent1);font-style:normal">Amazing</em>
+      </h2>
+      <p class="section-sub mx-auto" style="max-width:480px">
+        Have a project in mind? A crazy idea? Or just want to say hi? My inbox is always open ✉️
+      </p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8 reveal">
+        
+        <div class="contact-form-card">
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label>Your Name</label>
+              <input type="text" class="form-control" placeholder="John Doe" />
+            </div>
+            <div class="col-md-6">
+              <label>Email Address</label>
+              <input type="email" class="form-control" placeholder="john@example.com" />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label>Project Type</label>
+            <select class="form-select">
+              <option>UI/UX Design</option>
+              <option>Web Development</option>
+              <option>Branding</option>
+              <option>Consultation</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label>Your Message</label>
+            <textarea class="form-control" rows="5" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button class="btn-send" id="tombolKirimPesan" onclick="prosesKirimPesan()">Send Message ✈️</button>
+        </div>
+
+        <div class="d-flex justify-content-center gap-3 mt-4 reveal">
+          <a href="https://github.com/marisanura" class="social-btn" title="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://wa.me/qr/JBIRPM6BU7DBD1" class="social-btn" title="Whatsapp"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.tiktok.com/@mrsanura_?_r=1&_t=ZS-95lm3RkNDko" class="social-btn" title="Tiktok"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.instagram.com/rckwithou?igsh=eHNqMTFmemk5dG93" class="social-btn" title="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Crafted with <span>♥</span> by Marisa.© 2025 All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
