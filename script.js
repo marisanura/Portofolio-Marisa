@@ -107,3 +107,35 @@ var pengamatProgressBar = new IntersectionObserver(function(entries) {
 document.querySelectorAll('.progress-bar').forEach(function(pb) {
   pengamatProgressBar.observe(pb);
 });
+
+/*mode gelap*/
+const toggleButton = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+
+// Check tema yang tersimpan di localStorage saat website dibuka
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme) {
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  
+  // Sesuaikan ikon berdasarkan tema yang aktif
+  if (currentTheme === 'dark') {
+    themeIcon.textContent = '☀️'; // Tampilkan matahari jika sedang mode gelap
+  }
+}
+
+// Fungsi ketika tombol diklik
+toggleButton.addEventListener('click', () => {
+  let theme = document.documentElement.getAttribute('data-theme');
+  
+  if (theme === 'dark') {
+    // Ubah ke mode terang
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('theme', 'light');
+    themeIcon.textContent = '🌙';
+  } else {
+    // Ubah ke mode gelap
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+    themeIcon.textContent = '☀️';
+  }
+})
