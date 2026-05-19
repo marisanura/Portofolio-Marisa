@@ -25,37 +25,6 @@ document.querySelectorAll('.reveal, .fade-up').forEach(function(elemen, index) {
   pengamatElemen.observe(elemen);
 });
 
-/* ANGKA BERJALAN */
-function jalankanAnimasiHitung() {
-  document.querySelectorAll('[data-count]').forEach(function(el) {
-    var angkaTarget = parseInt(el.dataset.count);
-    var angkaAwal = 0;
-    
-    setTimeout(() => {
-      function tambahAngka() {
-        angkaAwal += Math.ceil(angkaTarget / 40);
-        
-        if (angkaAwal >= angkaTarget) {
-          el.textContent = angkaTarget + '+';
-        } else {
-          el.textContent = angkaAwal;
-          requestAnimationFrame(tambahAngka);
-        }
-      }
-      tambahAngka();
-    }, 500);
-  });
-}
-
-var pengamatHero = new IntersectionObserver(function(entries) {
-  if (entries[0].isIntersecting) {
-    jalankanAnimasiHitung();
-    pengamatHero.disconnect();
-  }
-}, { threshold: 0.5 });
-
-pengamatHero.observe(document.getElementById('home'));
-
 /* TOMBOL GESER PROJECT */
 var trackProject = document.getElementById('areaTrackProject');
 var tombolKiri = document.getElementById('tombolGeserKiri');
@@ -112,18 +81,16 @@ document.querySelectorAll('.progress-bar').forEach(function(pb) {
 const toggleButton = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 
-// Check tema yang tersimpan di localStorage saat website dibuka
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);
   
-  // Sesuaikan ikon berdasarkan tema yang aktif
   if (currentTheme === 'dark') {
-    themeIcon.textContent = '☀️'; // Tampilkan matahari jika sedang mode gelap
+    themeIcon.textContent = '☀️'; //
   }
 }
 
-// Fungsi ketika tombol diklik
+// tombol mode
 toggleButton.addEventListener('click', () => {
   let theme = document.documentElement.getAttribute('data-theme');
   
@@ -138,4 +105,4 @@ toggleButton.addEventListener('click', () => {
     localStorage.setItem('theme', 'dark');
     themeIcon.textContent = '☀️';
   }
-})
+});
