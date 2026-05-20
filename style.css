@@ -277,7 +277,7 @@ body {
 /* tag melayang  */
 .floating-chip {
   position: absolute;
-  background: #fff;
+  background: var(--c-bg);
   border-radius: 16px;
   padding: 8px 14px;
   font-size: 12px;
@@ -716,26 +716,99 @@ section {
 }
 
 /* FOOTER */
-footer {
-  background: var(--c-text);
-  color: var(--c-bg);
-  padding: 28px 0;
-  text-align: center;
+.footer{
+    background: black;
+    color: white;
+    padding: 60px 10% 20px;
+    margin-top: 80px;
 }
-footer p { 
-  font-size: 14px; 
-  opacity: .6; 
-  margin: 0; 
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
 }
-footer span { 
-  color: var(--c-accent1); 
-  opacity: 1; 
-  display: inline-block;
-  animation: heartbeat 1.5s infinite;
+
+.footer-brand{
+    flex: 1;
+    min-width: 250px;
 }
-@keyframes heartbeat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.3); }
+
+.footer-brand h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #00bcd4;
+}
+
+.footer-brand p{
+    color: white;
+    line-height: 1.7;
+}
+
+.footer-links{
+    flex: 1;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h3,
+.footer-tools h3{
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.footer-links a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: #00bcd4;
+    transform: translateX(5px);
+}
+
+.footer-tools{
+    flex: 1;
+    min-width: 220px;
+}
+
+.tools-icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tools-icons img{
+    width: 45px;
+    height: 45px;
+    background: white;
+    padding: 8px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.tools-icons img:hover{
+    transform: translateY(-5px) scale(1.08);
+}
+
+.footer-bottom{
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    .footer-container{
+        flex-direction: column;
+    }
 }
 
 /* RESPONSIVE */
@@ -801,3 +874,6 @@ footer span {
 [data-theme="dark"] .project-card:hover{
   box-shadow: 0 20px 45px rgba(255,120,117,.18) !important;
 }
+[data-theme="dark"] .footer{ background: white; color: black;}
+[data-theme="dark"] .footer-brand p{ color: black;}
+[data-theme="dark"] .footer-links a{ color: black;}
