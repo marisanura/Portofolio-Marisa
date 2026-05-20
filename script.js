@@ -1,13 +1,3 @@
-/* BAYANGAN NAVBAR SAAT SCROLL */
-window.addEventListener('scroll', function() {
-  var navbar = document.getElementById('navbarUtama');
-  if (window.scrollY > 40) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
-
 /* EFEK MUNCUL SAAT DI-SCROLL */
 var pengamatElemen = new IntersectionObserver(function(entries) {
   entries.forEach(function(entry) {
