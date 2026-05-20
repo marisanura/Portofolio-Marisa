@@ -874,6 +874,6 @@ section {
 [data-theme="dark"] .project-card:hover{
   box-shadow: 0 20px 45px rgba(255,120,117,.18) !important;
 }
-[data-theme="dark"] .footer{ background: white; color: black;}
+[data-theme="dark"] .footer{ background: #a1a1a1; color: black;}
 [data-theme="dark"] .footer-brand p{ color: black;}
 [data-theme="dark"] .footer-links a{ color: black;}
